@@ -55,12 +55,14 @@ const links = [
 .mobile-header {
   position: absolute;
   top: 0;
+  z-index: 999;
   width: 100%;
   padding-bottom: 30px;
   transition: transform 0.3s ease;
   background-color: #044636;
   color: #ffffff;
   min-height: 100vh;
+  bottom: 0;
 }
 
 .mobile-header__container {

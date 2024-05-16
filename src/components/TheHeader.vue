@@ -97,6 +97,10 @@ const isShow = ref(false)
   margin-right: 8px;
 }
 
+.navbar {
+  display: flex;
+}
+
 .navbar__list {
   display: flex;
   align-items: center;
