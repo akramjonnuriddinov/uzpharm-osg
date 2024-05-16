@@ -4,6 +4,7 @@ import HeroComponent from '@/components/HeroComponent.vue'
 import InternationForum from '@/components/InternationForum.vue'
 import ParticipantComponent from '@/components/ParticipantComponent.vue'
 import SpeakersComponent from '@/components/SpeakersComponent.vue'
+import AdvantagesComponent from '@/components/AdvantagesComponent.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import SpeakersComponent from '@/components/SpeakersComponent.vue'
     <internation-forum />
     <participant-component />
     <speakers-component />
+    <advantages-component />
   </div>
 </template>
 
