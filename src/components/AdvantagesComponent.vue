@@ -125,6 +125,7 @@ const advantages = [
   height: calc(100% - 100px);
   padding: 20px;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   background-color: #e0f6f1;
@@ -136,6 +137,7 @@ const advantages = [
   padding-top: 120px;
   position: relative;
 }
+
 .advantages__list-img-wrapper::before {
   border-right: 2px dashed #059a77;
   bottom: 0;
@@ -152,5 +154,52 @@ const advantages = [
   width: 100px;
   height: 100px;
   display: flex;
+}
+
+.advantages__list-title {
+  font-size: 28px;
+  line-height: 150%;
+  color: #1c2f3f;
+  font-weight: 700;
+}
+
+.advantages__list-text {
+  font-size: 18px;
+  line-height: 140%;
+  color: #1c2f3f;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages__list {
+    flex-wrap: wrap;
+  }
+  .advantages__item-wrapper {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .advantages {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages {
+    padding: 40px 0;
+  }
+  .advantages__item-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advantages__item-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 </style>
