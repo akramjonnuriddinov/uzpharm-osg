@@ -80,6 +80,8 @@ const isShow = ref(false)
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .header__logo {
@@ -110,9 +112,9 @@ const isShow = ref(false)
 
 .navbar__item {
   font-size: 20px;
-  font-weight: 400;
   line-height: 150%;
   transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 .navbar__item:hover {

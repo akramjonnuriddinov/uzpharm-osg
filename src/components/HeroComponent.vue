@@ -34,6 +34,22 @@
   flex-direction: column;
   padding-top: 260px;
   padding-bottom: 280px;
+  position: relative;
+}
+
+.hero__container::before {
+  animation: toBig 2s linear;
+  background-image: url('@/assets/images/hero-bg.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -65%);
+  width: 100%;
 }
 
 .hero__title {
@@ -43,6 +59,8 @@
   text-align: center;
   margin-bottom: 12px;
   max-width: 1620px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__text {
@@ -52,12 +70,16 @@
   font-weight: 400;
   line-height: 150%;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__btn-wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-btn {

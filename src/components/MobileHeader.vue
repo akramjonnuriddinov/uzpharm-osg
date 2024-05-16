@@ -68,6 +68,8 @@ const links = [
 .mobile-header__container {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .mobile-header__top {
@@ -106,12 +108,11 @@ const links = [
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar__item {
   font-size: 20px;
-  font-weight: 400;
   line-height: 150%;
   transition: all 0.2s ease;
 }
