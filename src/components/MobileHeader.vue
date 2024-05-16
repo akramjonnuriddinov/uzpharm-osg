@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import MobileHeader from '@/components/MobileHeader.vue'
-import { ref } from 'vue'
 const links = [
   {
     name: 'Program',
@@ -15,26 +13,24 @@ const links = [
     path: 'media',
   },
 ]
-
-const isShow = ref(false)
 </script>
 
 <template>
-  <mobile-header
-    @close-mobile-navbar="isShow = false"
-    class="mobile-header"
-    :class="{ 'translate-x-full': !isShow, 'translate-x-none': isShow }"
-  />
-  <header class="header" :style="{ display: isShow ? 'none' : 'flex' }">
-    <div class="container header__container">
-      <router-link class="header__logo" to="/">
-        <img class="header__logo-img" src="@/assets/images/logo.svg" alt="site logo" />
-        <span
-          >Third International Pharmaceutical
-          <br />
-          Forum of Uzbekistan
-        </span>
-      </router-link>
+  <header class="mobile-header">
+    <div class="container mobile-header__container">
+      <div class="mobile-header__top">
+        <router-link class="mobile-header__logo" to="/">
+          <img class="mobile-header__logo-img" src="@/assets/images/logo.svg" alt="site logo" />
+          <span
+            >Third International Pharmaceutical
+            <br />
+            Forum of Uzbekistan
+          </span>
+        </router-link>
+        <button @click="$emit('close-mobile-navbar')" class="close-mobile-navbar">
+          <img class="close-mobile-navbar__img" src="@/assets/images/close.svg" alt="hamburger btn" />
+        </button>
+      </div>
       <nav class="navbar">
         <ul class="navbar__list">
           <li v-for="link in links" :key="link.path" class="navbar__item">
@@ -42,47 +38,49 @@ const isShow = ref(false)
           </li>
         </ul>
       </nav>
-      <div class="header__btn-wrapper">
+      <div class="mobile-header__btn-wrapper">
+        <button class="main-btn lang-btn">
+          <span>RUS</span>
+        </button>
         <button class="main-btn lang-btn">
           <span>EN</span>
-          <img src="@/assets/images/arrow-bottom.svg" alt="arrow bottom" />
         </button>
-        <a class="main-btn header__register-btn" href="#">Register</a>
+        <a class="main-btn mobile-header__register-btn" href="#">Register</a>
       </div>
-      <button @click="isShow = true" class="hamburger-btn">
-        <img class="hamburger-btn__img" src="@/assets/images/hamburger.svg" alt="hamburger btn" />
-      </button>
     </div>
   </header>
 </template>
 
 <style scoped>
-.translate-x-full {
-  transform: translateX(-100%);
-}
-
-.translate-x-none {
-  transform: translateX(0);
-}
-
 .mobile-header {
-  display: none;
-}
-
-.header {
-  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding-bottom: 30px;
+  transition: transform 0.3s ease;
   background-color: #044636;
   color: #ffffff;
+  min-height: 100vh;
 }
 
-.header__container {
+.mobile-header__container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-.header__logo {
+.mobile-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  position: sticky;
+  top: 0;
+  background-color: #044636;
+}
+
+.mobile-header__logo {
   display: flex;
   align-items: center;
   font-size: 19px;
@@ -90,16 +88,21 @@ const isShow = ref(false)
   line-height: 140%;
 }
 
-.header__logo-img {
+.mobile-header__logo-img {
   width: 60px;
   height: 60px;
   display: flex;
   margin-right: 8px;
 }
 
+.navbar {
+  padding-top: 24px;
+}
+
 .navbar__list {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 40px;
   font-weight: 600;
 }
@@ -116,7 +119,7 @@ const isShow = ref(false)
 }
 
 /* BTN */
-.header__btn-wrapper {
+.mobile-header__btn-wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -141,13 +144,12 @@ const isShow = ref(false)
   gap: 8px;
 }
 
-.header__register-btn {
+.mobile-header__register-btn {
   background-color: #06b48b;
 }
 /* BTN */
 
-.hamburger-btn {
-  display: none;
+.close-mobile-navbar {
   background-color: transparent;
   color: #fff;
   border: none;
@@ -155,18 +157,6 @@ const isShow = ref(false)
 
 /* MEDIA */
 @media screen and (max-width: 1200px) {
-  .mobile-header {
-    display: flex;
-  }
-  .hamburger-btn {
-    display: flex;
-  }
-  .navbar {
-    display: none;
-  }
-  .header__btn-wrapper {
-    display: none;
-  }
 }
 /* /MEDIA */
 </style>
