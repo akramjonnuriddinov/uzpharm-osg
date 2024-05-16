@@ -3,6 +3,7 @@ import TheHeader from '@/components/TheHeader.vue'
 import HeroComponent from '@/components/HeroComponent.vue'
 import InternationForum from '@/components/InternationForum.vue'
 import ParticipantComponent from '@/components/ParticipantComponent.vue'
+import SpeakersComponent from '@/components/SpeakersComponent.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import ParticipantComponent from '@/components/ParticipantComponent.vue'
     <hero-component />
     <internation-forum />
     <participant-component />
+    <speakers-component />
   </div>
 </template>
 
