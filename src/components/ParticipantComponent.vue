@@ -64,6 +64,10 @@ const participants = [
 </template>
 
 <style scoped>
+.part {
+  padding: 280px 0 160px;
+}
+
 .part__top {
   display: flex;
   align-items: center;
@@ -131,7 +135,16 @@ const participants = [
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .part {
+    padding: 80px 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .part {
+    padding: 40px 0;
+  }
   .part__list-item {
     max-width: 100%;
   }

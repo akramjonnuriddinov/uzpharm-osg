@@ -102,6 +102,7 @@ const forums = [
 /* FORUM COUNT */
 .forum__list {
   display: flex;
+  transform: translateY(50%);
 }
 
 .forum__item {
@@ -175,6 +176,13 @@ const forums = [
   }
 }
 
+@media screen and (max-width: 991px) {
+  .forum__list {
+    transform: translateY(0);
+    padding-bottom: 24px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .forum__container {
     flex-direction: column;
@@ -189,9 +197,6 @@ const forums = [
   }
   .forum__img-wrapper {
     max-width: 100%;
-  }
-  .forum__list {
-    padding-bottom: 24px;
   }
   .forum__item {
     max-width: 100%;
