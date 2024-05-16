@@ -19,7 +19,7 @@ const forums = [
   <section class="forum">
     <div class="container forum__container">
       <div class="forum__img-wrapper forum__img-wrapper-first">
-        <img class="forum__img" src="@/assets/images/forum1.png" alt="" />
+        <img class="forum__img" src="@/assets/images/forum1.png" alt="forum" />
       </div>
       <div class="forum__content">
         <h2 class="forum__title">International Pharmaceutical Forum of Uzbekistan</h2>
@@ -31,7 +31,7 @@ const forums = [
         </p>
       </div>
       <div class="forum__img-wrapper">
-        <img class="forum__img" src="@/assets/images/forum2.png" alt="" />
+        <img class="forum__img" src="@/assets/images/forum2.png" alt="forum 2" />
       </div>
     </div>
     <div class="container forum__count">
