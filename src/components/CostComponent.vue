@@ -81,6 +81,20 @@
   width: 140px;
 }
 
+.cost-card__price {
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cost-card__text {
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
 /* BTN */
 .tab-btn-wrapper {
   display: flex;
