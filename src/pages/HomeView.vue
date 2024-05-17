@@ -8,6 +8,7 @@ import SpeakersComponent from '@/components/SpeakersComponent.vue'
 import AdvantagesComponent from '@/components/AdvantagesComponent.vue'
 import AppLoader from '@/components/AppLoader.vue'
 import ProgramComponent from '@/components/ProgramComponent.vue'
+import ForumPartners from '@/components/ForumPartners.vue'
 
 const isLoading = ref(true)
 
@@ -31,6 +32,7 @@ setTimeout(() => {
     <speakers-component />
     <advantages-component />
     <program-component />
+    <forum-partners />
   </div>
 </template>
 
