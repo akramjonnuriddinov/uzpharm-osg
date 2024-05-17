@@ -69,6 +69,18 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
 </template>
 
 <style scoped>
+.footer {
+  background-color: #078b6c;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .phone-number {
   display: flex;
   flex-direction: column;
@@ -128,17 +140,6 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
   width: 18px;
   height: 18px;
 }
-/*  */
-.footer {
-  background-color: #078b6c;
-  padding: 60px 0;
-  color: #fff;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-}
 
 .footer__item {
   display: block;
@@ -182,5 +183,19 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
   font-size: 18px;
   line-height: 150%;
   margin-left: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 </style>
