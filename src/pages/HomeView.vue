@@ -10,6 +10,7 @@ import AppLoader from '@/components/AppLoader.vue'
 import ProgramComponent from '@/components/ProgramComponent.vue'
 import ForumPartners from '@/components/ForumPartners.vue'
 import OrganizerForum from '@/components/OrganizerForum.vue'
+import CostComponent from '@/components/CostComponent.vue'
 
 const isLoading = ref(true)
 
@@ -35,6 +36,7 @@ setTimeout(() => {
     <program-component />
     <forum-partners />
     <organizer-forum />
+    <cost-component />
   </div>
 </template>
 
