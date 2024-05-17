@@ -46,6 +46,24 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
           <a class="phone-number__link" href="#">Media</a>
         </div>
       </div>
+      <div class="footer__item footer__item--signup">
+        <div class="phone-number">
+          <div class="phone-number__top">
+            <img class="phone-number__icon" src="@/assets/images/phone.svg" alt="phone" />
+            <span>May 30-31, 2024 </span>
+          </div>
+        </div>
+        <div class="phone-number">
+          <div class="phone-number__top">
+            <img class="phone-number__icon" src="@/assets/images/dot.svg" alt="phone" />
+            <span>InterContinental Tashkent - Shakhrisabz Street 2 </span>
+          </div>
+        </div>
+        <button class="footer__register-btn">
+          <span>Register</span>
+          <img class="footer__register-btn-icon" src="@/assets/images/arrow-right-white.svg" alt="" />
+        </button>
+      </div>
     </div>
   </footer>
 </template>
@@ -69,7 +87,6 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 10%;
 }
 
 .phone-number__link {
@@ -80,6 +97,36 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
 
 .footer__links {
   gap: 16px;
+}
+
+.footer__item--signup {
+  background-color: #06b48b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 26px;
+  width: 100%;
+}
+
+.footer__register-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  font-weight: bold;
+}
+
+.footer__register-btn-icon {
+  display: flex;
+  width: 18px;
+  height: 18px;
 }
 /*  */
 .footer {
