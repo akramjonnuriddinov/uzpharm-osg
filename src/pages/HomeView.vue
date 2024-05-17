@@ -11,6 +11,7 @@ import ProgramComponent from '@/components/ProgramComponent.vue'
 import ForumPartners from '@/components/ForumPartners.vue'
 import OrganizerForum from '@/components/OrganizerForum.vue'
 import CostComponent from '@/components/CostComponent.vue'
+import TheFooter from '@/components/TheFooter.vue'
 
 const isLoading = ref(true)
 
@@ -37,6 +38,7 @@ setTimeout(() => {
     <forum-partners />
     <organizer-forum />
     <cost-component />
+    <the-footer />
   </div>
 </template>
 
