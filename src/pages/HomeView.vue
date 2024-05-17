@@ -9,6 +9,7 @@ import AdvantagesComponent from '@/components/AdvantagesComponent.vue'
 import AppLoader from '@/components/AppLoader.vue'
 import ProgramComponent from '@/components/ProgramComponent.vue'
 import ForumPartners from '@/components/ForumPartners.vue'
+import OrganizerForum from '@/components/OrganizerForum.vue'
 
 const isLoading = ref(true)
 
@@ -33,6 +34,7 @@ setTimeout(() => {
     <advantages-component />
     <program-component />
     <forum-partners />
+    <organizer-forum />
   </div>
 </template>
 
