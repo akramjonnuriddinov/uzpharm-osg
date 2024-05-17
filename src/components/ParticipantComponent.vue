@@ -80,7 +80,7 @@ const participants = [
   font-size: 48px;
   line-height: 150%;
   color: #1c2f3f;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5em;
 }
 

@@ -142,7 +142,7 @@ const forums = [
 
 .forum__list-title {
   font-size: 56px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 140%;
   text-align: center;
 }
