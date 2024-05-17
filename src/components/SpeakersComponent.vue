@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useImage } from '../composables/useImage'
+import WavesAnimation from '@/components/WavesAnimation.vue'
 
 const speakers = [
   {
@@ -54,6 +55,7 @@ const speakers = [
 </script>
 
 <template>
+  <waves-animation fill="#E0F6F1" />
   <section class="speakers">
     <div class="container speakers__container">
       <div class="speakers__top">

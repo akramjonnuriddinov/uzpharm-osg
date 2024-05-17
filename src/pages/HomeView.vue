@@ -7,6 +7,7 @@ import ParticipantComponent from '@/components/ParticipantComponent.vue'
 import SpeakersComponent from '@/components/SpeakersComponent.vue'
 import AdvantagesComponent from '@/components/AdvantagesComponent.vue'
 import AppLoader from '@/components/AppLoader.vue'
+import ProgramComponent from '@/components/ProgramComponent.vue'
 
 const isLoading = ref(true)
 
@@ -29,6 +30,7 @@ setTimeout(() => {
     <participant-component />
     <speakers-component />
     <advantages-component />
+    <program-component />
   </div>
 </template>
 
