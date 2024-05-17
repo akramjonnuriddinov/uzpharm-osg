@@ -23,15 +23,74 @@ import WavesAnimation from '@/components/WavesAnimation.vue'
           <a>Online Service Group</a>
         </div>
       </div>
+      <div class="footer__item">
+        <div class="phone-number">
+          <div class="phone-number__top">
+            <img class="phone-number__icon" src="@/assets/images/phone.svg" alt="phone" />
+            <span>Phone number: </span>
+          </div>
+          <a class="phone-number__link" href="tel:+998991178899">+998 99 117 88 99</a>
+        </div>
+        <div class="phone-number">
+          <div class="phone-number__top">
+            <img class="phone-number__icon" src="@/assets/images/dot.svg" alt="phone" />
+            <span>Address: </span>
+          </div>
+          <a class="phone-number__link" href="#">OOO “World Pharma Forum” Tashkent, 95A Amir Temur Avenue</a>
+        </div>
+      </div>
+      <div class="footer__item">
+        <div class="phone-number footer__links">
+          <a class="phone-number__link" href="#">Program</a>
+          <a class="phone-number__link" href="#">Participants </a>
+          <a class="phone-number__link" href="#">Media</a>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
 
 <style scoped>
+.phone-number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.phone-number__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.phone-number__top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 10%;
+}
+
+.phone-number__link {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.footer__links {
+  gap: 16px;
+}
+/*  */
 .footer {
   background-color: #078b6c;
   padding: 60px 0;
   color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__item {
